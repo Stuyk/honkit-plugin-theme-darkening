@@ -5,7 +5,6 @@ const fs = require("fs");
 async function handleInitHook() {
     const lessPath = path.join(__dirname, "_assets", "theme.less");
     const data = fs.readFileSync(lessPath).toString();
-    const bgData = fs.readFileSync(bgPath);
 
     const lessData = await new Promise((resolve) => {
         less.render(data, (e, output) => {
@@ -17,10 +16,7 @@ async function handleInitHook() {
         });
     });
 
-    const newBgPath = path.join("gitbook", "gitbook-plugin-honkit-plugin-theme-darkening", "bg.png");
     const newCSSPath = path.join("gitbook", "gitbook-plugin-honkit-plugin-theme-darkening", "darkening.css");
-
-    this.output.writeFile(newBgPath, bgData);
     return this.output.writeFile(newCSSPath, lessData);
 }
 

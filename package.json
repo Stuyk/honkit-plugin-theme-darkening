@@ -1,6 +1,6 @@
 {
     "name": "honkit-plugin-theme-darkening",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A dark theme for Honkit forked from darkening",
     "main": "index.js",
     "author": "stuyk",
