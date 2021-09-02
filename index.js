@@ -4,7 +4,6 @@ const fs = require("fs");
 
 async function handleInitHook() {
     const lessPath = path.join(__dirname, "_assets", "theme.less");
-    const bgPath = path.join(__dirname, "_assets", "bg.png");
     const data = fs.readFileSync(lessPath).toString();
     const bgData = fs.readFileSync(bgPath);
 
