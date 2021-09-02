@@ -1,0 +1,205 @@
+@background: #212121;
+@foreground: #e0e0e0;
+@link: #eee;
+@text: #eeeeee;
+@hover: #81D4FA;
+@link: #29B6F6;
+
+.book {
+    background: rgba(12, 12, 12, 1) !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.page-inner {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.book-header {
+    background: none !important;
+
+    .dropdown {
+        display: none !important;
+    }
+
+    h1 {
+        display: none !important;
+    }
+}
+
+.page-inner {
+    max-width: unset !important;
+}
+
+li {
+    color: @text !important;
+}
+
+.book-body {
+    background: none !important;
+    color: @foreground !important;
+}
+
+.book-summary {
+    background: rgba(8, 8, 8, 1) !important;
+    color: @foreground !important;
+}
+
+.body-inner {
+    background: none !important;
+}
+
+.navigation-next,
+.navigation-prev {
+    display: none !important;
+}
+
+.js-toolbar-action .fa {
+    font-size: 16px !important;
+}
+
+#book-search-input {
+    background: rgba(3, 3, 3, 1) !important;
+    color: @foreground !important;
+    font-family: 'Roboto', sans-serif !important;
+
+    input {
+        color: @foreground !important;
+        opacity: 0.8 !important;
+    }
+}
+
+a {
+    color: @link !important;
+    opacity: 1 !important;
+    transition: 0.2s;
+    font-family: 'Roboto', sans-serif !important;
+
+    &:hover {
+        color: @hover !important;
+        opacity: 1 !important;
+        text-decoration: none !important;
+    }
+}
+
+a h1, a h2, a h3, a h4, a h5, a h6 {
+    color: @link !important;
+    opacity: 1 !important;
+    font-weight: bold;
+    transition: 0.2s;
+
+    &:hover {
+        color: @hover !important;
+        opacity: 1 !important;
+        text-decoration: none !important;
+    }
+}
+
+.gitbook-link {
+    display: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: @foreground !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+p {
+    color: rgb(175, 175, 175) !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.markdown-section code {
+    background-color: transparent !important;
+}
+
+.markdown-section table {
+    border: transparent !important;
+}
+
+.markdown-section table tr {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    color: @text !important;
+    border: transparent !important;
+
+    &:nth-child(odd) {
+        background-color: rgba(0, 0, 0, 0.4) !important;
+        color: @text !important;
+        border: transparent !important;
+    }
+}
+
+ul li a {
+    color: rgba(175, 175, 175, 1) !important;
+    font-weight: bold !important;
+}
+
+pre {
+    border: 2px solid rgba(22, 22, 22, 1) !important;
+    border-radius: 6px !important;
+    background: rgba(6, 6, 6, 1) !important;
+}
+
+.language, .code, code[class*="language-"], .markdown-section, code[class*="language-"], pre[class*="language-"] {
+    font-family: 'Fira Code', monospace !important;
+}
+
+.markdown-section {
+    color: #ABB2BF !important;
+}
+
+.language- {
+    color: #ABB2BF !important;
+}
+
+.markdown-section code {
+    color: #ABB2BF !important;
+}
+
+.function, .punctuation {
+    color: #61AFEF !important;
+}
+
+.class-name {
+    color: #BF3015 !important;
+}
+
+.parameter {
+    color: #ABB2BF !important;
+}
+
+.string {
+    color: #98C359 !important;
+}
+
+.number {
+    color: #D19A66 !important;
+}
+
+.keyword {
+    color: #C678D0 !important;
+}
+
+.operator {
+    color: #3BB6C2 !important;
+}
+    
+::-webkit-scrollbar {
+    width: 12px;
+    background: rgba(20, 20, 20, 0.85);
+    box-shadow: -1px 0px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(100, 100, 100, 1);
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    cursor: pointer !important;
+}
